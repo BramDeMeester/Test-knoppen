@@ -1,0 +1,348 @@
+@import "../oz-css/shared-variabelen.less";
+@import "../css/cevi-variables.less";
+
+@media screen and (max-height: 600px) {
+  .bewoner-comp-smartphone {
+    height: calc(~"(100vh - 60px )/3");
+  }
+}
+
+@media screen and (max-width: @smallwindow-grens) {
+    body {
+        overflow-x: hidden !important;
+
+        .modal-filter {
+            padding-top: 75px;
+        }
+
+        .panel-filter {
+            position: relative;
+            z-index: 1060;
+        }
+
+        #bewoners-header {
+            color: @color-font-header;
+            background: @color-background-header;
+           // height: @large-distance;
+            font-size: 20px;
+            padding-top: 3 * @small-distance;
+            .border-left;
+            padding-left: 0;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            -moz-transition: height 0.25s ease;
+            -webkit-transition: height 0.25s ease;
+            -o-transition: height 0.25s ease;
+            transition: height 0.25s ease;
+
+            .cevi-time-small {
+                padding-top: @small-distance;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            #mini-klok {
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .oz-knop {
+                font-size: 16px !important;
+            }
+
+            .nav-button,
+            .user-name {
+                padding: 0 !important;
+            }
+
+            .header-buttons {
+                display: flex;
+                align-items: center;
+                margin: 0 2px !important;
+            }
+        }
+
+        .extraheight {
+            height: 1.7 * @large-distance !important;
+        }
+
+        .hide-clock {
+            height: 0px;
+            margin-bottom: 0px !important;
+            visibility: collapse;
+        }
+
+        #bewoners-container {
+            height: calc(~"(100vh - 60px )");
+            width: 100%;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            clear: both;
+            .col-sm-6 {
+                padding: 0;
+            }
+
+            .col-xs-6 {
+                padding: 0;
+            }
+
+            .bewoner-comp-smartphone {
+                width: 100%;
+                padding-left: 5px;
+                padding-top: 5px;
+                text-align: center !important;
+                color: #fff;
+                min-height: 150px;
+
+                .bewoner-info-bovenaan {
+                    .bewoner-info-voornaam {
+                        font-size: 16px;
+                    }
+                }
+
+                .bewoner-info-foto {
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    height: 80px;
+                    min-width: 80px;
+                    max-width: 80px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: inline-block;
+                }
+
+                .bewoner-info-img-thumb {
+                    position: relative;
+                }
+
+                .bewoner-afwezig {
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    opacity: 0.7;
+                }
+
+                .bewoner-info-foto:active {
+                    border-color: @color-active-button;
+                    box-shadow: 0 0 10px @color-active-button;
+                }
+
+                .katz-bol {
+                    // zie ook in regCommon.less
+                    border: 1px solid #fff;
+                    width: 20px;
+                    height: 20px;
+                    top: 50%;
+                    left: 60%;
+                    line-height: 18px;
+                }
+
+                .DNR-bol {
+                    border: 1px solid #fff;
+                    width: 20px;
+                    height: 20px;
+                    top: 6%;
+                    left: 28%;
+                    line-height: 18px;
+                }
+
+                .bewoner-info-onderaan {
+                    .bewoner-info-locatie {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .jarig {
+                color: #fff100;
+                padding-left: 8px;
+            }
+
+            .bewoner-info-room {
+                background-color: #eceef3;
+                color: #333;
+                box-shadow: #333 2px 2px 5px;
+                padding: 2px 4px;
+                border-radius: 5px;
+                vertical-align: middle;
+                margin-right: @small-distance;
+                margin-bottom: @medium-distance;
+                font-size: 10px;
+                position: absolute;
+                top: 11px;
+                left: 12px;
+            }
+
+            .bewoner-info-voornaam {
+                font-family: "Dancing Script", cursive;
+                font-size: 20px !important;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .darker-color {
+                color: black;
+            }
+        }
+
+        cevi-time {
+            font-size: 14px;
+        }
+
+        .oz-knop {
+            width: 3 * @medium-distance;
+            border-radius: @small-distance;
+            text-align: center;
+            padding: @extra-small-distance;
+            border: 1px solid @color-font-header;
+            background: lighten(@color-font-header, 30%);
+            //margin-left:0px !important;
+        }
+
+        .oz-knop:active {
+            border-color: @color-active-button;
+            box-shadow: 0 0 10px @color-active-button;
+        }
+
+        .oz-knop.actieve-oz-knop {
+            background: @color-font-header;
+            color: lighten(@color-font-header, 30%) !important;
+        }
+
+        .user-name {
+            text-align: right;
+            margin-top: -2px;
+
+            span {
+                display: none;
+            }
+
+            .oz-knop {
+                display: inline-block !important;
+                margin-right: 0.8em;
+            }
+        }
+        /*.woz-modal-backdrop {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            z-index: 10;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            background-color: #808080;
+            opacity: 0.4;
+        }*/
+        .modal-scherm {
+            margin: @medium-distance;
+            position: fixed;
+            padding: 0px @medium-distance;
+            min-height: calc(~"30vh - 120px");
+            max-height: 85vh;
+            width: 90vw;
+            overflow-y: auto;
+            background-color: @color-container-popup;
+            z-index: 1000;
+            border-radius: 5px;
+            /*font-family: 'Dosis', cursive, arial, helvetica;*/
+            input#zoek-input {
+                width: 100%;
+                height: 40px;
+                font-size: 16px !important;
+                margin-top: @medium-distance !important;
+                padding-left: 2 * @small-distance;
+            }
+
+            .selected-sort {
+                background: @color-font-header;
+                color: lighten(@color-font-header, 30%);
+            }
+
+            .popup {
+                width: 100%;
+                font-size: 16px;
+                padding-top: 1.5 * @small-distance;
+                height: 2 * @medium-distance;
+                margin: @medium-distance 0px;
+            }
+
+            hr {
+                margin-bottom: @medium-distance;
+                margin-top: 0px;
+            }
+
+            .ok-knop {
+                width: 48%;
+                font-size: 16px;
+                text-transform: uppercase;
+                height: 2 * @medium-distance;
+                margin-bottom: @medium-distance;
+                padding-top: 1.5 * @small-distance !important;
+                margin-left: 2%;
+            }
+
+            .cancel-knop {
+                width: 48%;
+                font-size: 16px;
+                text-transform: uppercase;
+                height: 2 * @medium-distance;
+                margin-bottom: @medium-distance;
+                padding-top: 1.5 * @small-distance !important;
+                margin-right: 2%;
+            }
+
+            .erkenning-knop {
+                width: 23.5%;
+                font-size: 16px;
+                height: 2 * @medium-distance;
+                padding-top: 1.5 * @small-distance;
+                margin-right: 2%;
+                //margin-bottom:10px;
+            }
+
+            .erkenning-knop:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        #data-laden {
+            text-align: center;
+            padding-top: 30vh;
+            color: white;
+            font-size: 20px;
+        }
+
+        .centered-smartphone {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -150%);
+            z-index: 1;
+            color: @color-dark-grey;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+        }
+
+        .centered-smartphone-bewoner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            z-index: 1;
+            color: @color-dark-grey;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+  #bewoners-header {
+    .oz-knop {
+      width: 2.5 * @medium-distance !important;
+    }
+  }
+}

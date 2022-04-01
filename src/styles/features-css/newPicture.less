@@ -1,0 +1,38 @@
+@import "../oz-css/shared-variabelen.less";
+@import "../css/cevi-variables.less";
+
+feline-new-picture-modal {
+  .oz-keuze-twee-knoppen {
+    font-size: 16px;
+    max-width: initial;
+    padding: 7px !important;
+  }
+
+  .picture-modal {
+    z-index: 9999 !important;
+
+    .modal-dialog {
+      text-align: center;
+
+      .modal-footer {
+        text-align: center !important;
+
+        @media screen and (max-width: @smallwindow-grens) {
+          .modal-footer-item {
+            text-align: center;
+            margin: 10px 0;
+
+            .pull-left,
+            .pull-right {
+              float: none !important;
+
+              button {
+                  margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

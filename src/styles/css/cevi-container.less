@@ -1,0 +1,161 @@
+.PanelBodyContent {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    height:100%;
+    min-height:100%;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 0px !important;
+}
+.MainContainer {
+    box-shadow: 3px 3px 5px #888888;
+    margin-right: 15px;
+    margin-left:75px;
+    height: -moz-calc(88%);
+    
+    /* WebKit */
+    height: -webkit-calc(100%);
+    /* Opera */
+    height: -o-calc(100%);
+    /* Standard */
+    height: calc(100%);
+    background-color:@color-white;
+    @media(max-height:780px){
+    height: -moz-calc(100%);
+    /* WebKit */
+    height: -webkit-calc(100%);
+    /* Opera */
+    height: -o-calc(100%);
+    /* Standard */
+    height: calc(100%);
+    }
+}
+.SubMenuContainer {
+    width: 300px;
+    background: RGBA(255, 255, 255, 1);
+  //  border: 1px solid white;
+    height: -moz-calc(100% );
+    /* WebKit */
+    height: -webkit-calc(100%);
+    /* Opera */
+    height: -o-calc(100%);
+    /* Standard */
+    height: calc(100%);
+    float: left;
+    border-right: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+    display: flex;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+.SubMenuContainerLeeg {
+    width: 35px;
+    background: RGBA(255, 255, 255, 1);
+    border: 1px solid white;
+    height: -moz-calc(100% );
+    /* WebKit */
+    height: -webkit-calc(100%);
+    /* Opera */
+    height: -o-calc(100%);
+    /* Standard */
+    height: calc(100%);
+    float: left;
+    border-right: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+    padding-left:10px;
+    padding-top:10px;
+}
+.zoek-opdracht-box {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    display: flex;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+.pointer:hover{
+    cursor:pointer;
+}
+
+
+.OverviewContainer {
+    background: RGBA(255, 255, 255, 1);
+    overflow: hidden;
+    width: auto;
+    /* WebKit */
+    margin-left: 1px;
+    border-top: 0px solid #565962;
+    height: -moz-calc(100% );
+    /* WebKit */
+    height: -webkit-calc(100%);
+    /* Opera */
+    height: -o-calc(100%);
+    /* Standard */
+    height: calc(100%);
+}
+.DossierContainerOpen {
+    background: RGBA(255, 255, 255, 1);
+    border: 1px solid White;
+    width: -moz-calc(100% - 150px);
+    /* WebKit */
+    width: -webkit-calc(100% - 150px);
+    /* Opera */
+    width: -o-calc(100% - 150px);
+    /* Standard */
+    width: calc(100% - 150px);
+    left: 105px;
+    margin-top: 5px;
+    overflow: auto;
+}
+.table-row {
+    padding-left: 0;
+}
+.TabContainerClose {
+    background: RGBA(255, 255, 255, 1);
+    border: 1px solid @color-light-grey;
+    width: 36px;
+    left: 65px;
+    margin-top: 5px;
+}
+.OverviewContainerInnerBody {
+    font-size: 12px;
+    line-height:16px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; 
+    height: -moz-calc(100% );
+    height: -webkit-calc(100% );
+    height: -o-calc(100%);
+    height: calc(100% );
+}
+.OverviewContainerHeader {
+    margin-bottom:0px;
+}
+.OverviewContainerBody {
+    display:flex;
+    display: -ms-flexbox;
+    flex-direction:column;
+    -ms-flex-direction:column;
+    flex: 1 1 auto;
+    -ms-flex:1 1 auto;
+    min-height:0;
+    max-height:100%;
+    overflow-y:scroll;
+    position:relative;
+
+}

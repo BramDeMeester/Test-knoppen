@@ -1,0 +1,164 @@
+//PANELS
+.panel-dashboard{    
+    height:calc(65%);
+    width:calc(65%);
+    min-width:800px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;   
+    @media screen and (max-width:@screen-md-size){
+        height:calc(75%);
+        width:calc(70%);
+         min-width:800px;
+    }    
+    @media screen and (max-height:400px){
+        height:calc(90%);
+        width:calc(70%);
+        min-width:800px;
+    }      
+}
+.panel-dashboard-title{
+    border-bottom: @header-border-bottom solid @color-red;
+}
+.panel-dashboard-body{
+    height:88%;
+    background-color:@color-white;
+    box-shadow:  1px 1px 5px 0px rgba(0,0,0,0.25);    
+}
+.panel-left-menu{
+    padding-top:30px;
+    background-color:@color-light-blue;
+    width:@panel-left-menu-width;
+    float: left;
+    height:100%;
+    overflow-y:auto;
+    
+}
+.panel-dashboard-menu{
+    height:80%;
+    align-content:center;
+    @media screen and (max-width:@screen-md-size)
+    {
+        height:70%;
+    }
+}
+.panel-dashboard-submenu{
+    height:20%;
+    text-align: center; 
+    margin: 0 auto;
+}
+.panel-dashboard-content{
+    width: 100% - @panel-left-menu-width;
+    float: right;
+    height:100%;
+    overflow-y:auto;
+
+}
+.panel-heading-title{
+    color:@color-white !important;
+}
+.panel-heading-title-dossier,.panel-heading-title-adhoc{
+    color:@color-white !important;
+    line-height:36px;
+}
+.panel-heading{
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Firefox 3.6 to 15*/
+    background: linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* Standard syntax */
+    border-radius:0px;
+
+
+}
+.panel-heading-actor{
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Firefox 3.6 to 15*/
+    background: linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* Standard syntax */
+    border-radius:0px;
+    padding-top:8px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:1px;
+    }
+
+.panel-heading-list-header{
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* For Firefox 3.6 to 15*/
+    background: linear-gradient(@background-panel-top-gradient, @background-panel-bottom-gradient); /* Standard syntax */
+    border-top: 1x solid @color-light-grey !important;
+    height:@panel-list-header-height;
+}
+
+.cevipanelbody {
+    padding-top: 0px !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: -moz-calc(100% );
+    height: -webkit-calc(100% );
+    height: -o-calc(100%);
+    height: calc(100% );
+}
+.panel {
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom:0px;
+}
+.Panel-Content {
+    width: -moz-calc(~"100% + 12px");
+    width: -webkit-calc(~"100% + 12px");
+    width: -o-calc(~"100% + 12px");
+    width: calc(~"100% + 12px");
+    margin-right: -22px;
+    height: -moz-calc(100% );
+    height: -webkit-calc(100% );
+    height: -o-calc(100%);
+    height: calc(100% );
+}
+.panel-heading-title-dossier.collapsed:before {
+    font-family: 'cevi-icon-font'; 
+    content: "\e904";      
+    color: white;         
+    font-size:17px;
+    font-style:normal;
+    padding-right:16px;
+    cursor:pointer;
+}
+
+.panel-heading-title-dossier:before {
+    font-family: 'cevi-icon-font'; 
+    content: "\e902";
+    font-size:10px;
+    padding-right:9px;
+    cursor:pointer;
+}
+.panel-heading-title-adhoc.collapsed:before {
+    font-family: 'cevi-icon-font'; 
+    content: "\e904";      
+    color: white;         
+    font-size:17px;
+    font-style:normal;
+    padding-right:16px;
+    cursor:pointer;
+}
+
+.panel-heading-title-adhoc:before {
+    font-family: 'cevi-icon-font'; 
+    content: "\e902";
+    font-size:10px;
+    padding-right:7px;
+    cursor:pointer;
+}
+
+.panel-heading > h2{
+    color:@color-white !important;
+}

@@ -1,0 +1,215 @@
+//BUTTONS
+.btn-primary-light-background{
+    border-radius:@button-radius;
+    border:none;
+    height:@button-height;
+    margin-bottom:1px;
+    padding-left:@button-padding-horizontal;
+    padding-right:@button-padding-horizontal;
+    text-transform:uppercase;
+    text-shadow:@button-primary-text-shadow;
+    color:white;
+    text-align:center;
+    font-size:@button-font-size;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-primary-light-top-gradient, @background-btn-primary-light-bottom-gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-primary-light-top-gradient, @background-btn-primary-light-bottom-gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-primary-light-top-gradient, @background-btn-primary-light-bottom-gradient); /* For Firefox 3.6 to 15*/
+    background: linear-gradient(@background-btn-primary-light-top-gradient, @background-btn-primary-light-bottom-gradient); /* Standard syntax */
+     @media screen and (max-width:@screen-md-size){
+        height:28px;
+        font-size:10px;
+    }
+}
+.btn-primary-light-background:hover{
+    color:white;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-primary-light-top-gradient-hover, @background-btn-primary-light-bottom-gradient-hover); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-primary-light-top-gradient-hover, @background-btn-primary-light-bottom-gradient-hover); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-primary-light-top-gradient-hover, @background-btn-primary-light-bottom-gradient-hover); /* For Firefox 3.6 to 15*/
+
+}
+.btn-primary-dark-background{
+    border-radius:@button-radius;
+    height:@button-height;
+    padding-left:@button-padding-horizontal;
+    padding-right:@button-padding-horizontal;
+    text-transform:uppercase;
+    text-shadow:@button-primary-text-shadow;
+    color:white;
+    text-align:center;
+    font-size:  @button-font-size;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-primary-dark-top-gradient, @background-btn-primary-dark-bottom-gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-primary-dark-top-gradient, @background-btn-primary-dark-bottom-gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-primary-dark-top-gradient, @background-btn-primary-dark-bottom-gradient); /* For Firefox 3.6 to 15*/
+    background: linear-gradient(@background-btn-primary-dark-top-gradient, @background-btn-primary-dark-bottom-gradient); /* Standard syntax */
+    border:none;
+
+
+}
+.btn-primary-dark-background:hover{
+     color:white;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-primary-dark-top-gradient-hover, @background-btn-primary-dark-bottom-gradient-hover); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-primary-dark-top-gradient-hover, @background-btn-primary-dark-bottom-gradient-hover); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-primary-dark-top-gradient-hover, @background-btn-primary-dark-bottom-gradient-hover); /* For Firefox 3.6 to 15*/
+}
+.btn-primary-dark-background-submenu{
+    border-radius:@button-radius-submenu;
+    border:none;
+    height:@button-height-submenu;
+    padding-left:@button-padding-horizontal;
+    padding-right:@button-padding-horizontal;
+    text-transform:uppercase;
+    text-shadow:@button-primary-text-shadow;
+    color:white;
+    text-align:center;
+    font-size:  @button-font-size-submenu;
+    background: @background-btn-primary-dark-top-gradient;
+    margin-left:5px;
+    margin-right:5px;
+     @media screen and (max-width:@screen-md-size){
+        font-size:@button-font-size-submenu - 4;
+        padding-left:15px;
+        padding-right:0px;
+        width:90%;
+        margin-bottom:10px;
+        i{
+            float:left;
+            margin-right:5px;
+        }
+
+    }
+         @media screen and (max-height:800px){
+            margin-left:0px;
+            margin-right:0px;
+            font-size:12px;
+    }
+
+
+}
+.btn-primary-dark-background-submenu:hover{
+    text-shadow:@button-primary-text-shadow;
+    color:white;
+    background: @background-btn-primary-dark-top-gradient; /* For browsers that do not support gradients */ 
+}
+.btn-secondary-light-background{
+    border-radius:@button-radius;
+    height:@button-height;
+    padding-left:@button-padding-horizontal;
+    padding-right:@button-padding-horizontal;
+    text-transform:uppercase;
+    color:white;
+    text-align:center;
+    font-size:@button-font-size;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-secondary-light-top-gradient, @background-btn-secondary-light-bottom-gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-secondary-light-top-gradient, @background-btn-secondary-light-bottom-gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-secondary-light-top-gradient, @background-btn-secondary-light-bottom-gradient); /* For Firefox 3.6 to 15*/
+    background: linear-gradient(@background-btn-secondary-light-top-gradient, @background-btn-secondary-light-bottom-gradient); /* Standard syntax */
+    border:none;
+}
+.btn-secondary-light-background:hover{
+    color:white;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-secondary-light-top-gradient-hover, @background-btn-secondary-light-bottom-gradient-hover); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-secondary-light-top-gradient-hover, @background-btn-secondary-light-bottom-gradient-hover); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-secondary-light-top-gradient-hover, @background-btn-secondary-light-bottom-gradient-hover); /* For Firefox 3.6 to 15*/
+}
+.btn-secondary-dark-background{
+    border-radius:@button-radius;
+    height:@button-height;
+    padding-left:@button-padding-horizontal;
+    padding-right:@button-padding-horizontal;
+    text-transform:uppercase;
+    text-shadow:@button-primary-text-shadow;
+    color:@color-dark-grey;
+    text-align:center;
+    font-size:  @button-font-size;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-secondary-dark-top-gradient, @background-btn-secondary-dark-bottom-gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-secondary-dark-top-gradient, @background-btn-secondary-dark-bottom-gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-secondary-dark-top-gradient, @background-btn-secondary-dark-bottom-gradient); /* For Firefox 3.6 to 15*/
+    background: linear-gradient(@background-btn-secondary-dark-top-gradient, @background-btn-secondary-dark-bottom-gradient); /* Standard syntax */
+    border:none;
+}
+.btn-secondary-dark-background:hover{
+    color:@color-dark-grey;
+    background: @color-dark-grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@background-btn-secondary-dark-top-gradient-hover, @background-btn-secondary-dark-bottom-gradient-hover); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@background-btn-secondary-dark-top-gradient-hover, @background-btn-secondary-dark-bottom-gradient-hover); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@background-btn-secondary-dark-top-gradient-hover, @background-btn-secondary-dark-bottom-gradient-hover); /* For Firefox 3.6 to 15*/
+}
+
+.btn-invalid{
+    border-style:outset;
+    border-color:@color-red;
+    border-radius:5px;
+    border-radius:5px;
+    height:35px;
+    margin-top:-1.5px;
+}
+
+.btn-right {
+    float: right;
+    margin-right: 20px !important;
+}
+.btn-right, .btn-right2 {
+    float: right;
+    margin-right: 15px;
+    background: #48A8D2;
+    color: white !important;
+    border: 1px solid #127AB7;
+    font-size: 12px;
+    margin-left: 2px !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 14px !important;
+    border-radius: 5px;
+}
+.btn-right2 {
+    background: #D6D7DC;
+    margin-right: 5px;
+    border: 1px solid #CCCFD4;
+    color: #83868F !important;
+}
+
+
+button:disabled, button:disabled:hover{
+    background:lighten(@color-dark-grey,50%) !important; 
+    cursor:not-allowed;
+    color:@color-dark-grey;
+    border: lighten(@color-dark-grey,50%) !important;
+}
+.btn-save{
+   background-color:@color-green;
+   color:@color-white;
+   border-radius:@button-radius;
+   border:none;
+   width:26px;
+   height:26px;
+   padding:5px;
+   font-size:12px;
+   margin-right:3px;
+}
+.btn-save:hover{
+   background-color:lighten(@color-green,20%);
+   color:@color-white;
+   border-radius:@button-radius;
+}
+.btn-cancel{
+   background-color:@color-red;
+   color:@color-white;
+   width:26px;
+   height:26px;
+   border-radius:@button-radius;
+   border:none;
+   padding:5px;
+   font-size:12px;
+   margin-right:3px;
+}
+.btn-cancel:hover{
+   background-color:lighten(@color-red,20%);
+   color:@color-white;
+}

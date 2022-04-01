@@ -1,0 +1,260 @@
+fb-load-spinner {
+    flex: 1 1 auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.fb-load-spinner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(225,225,225,0.5);
+    border-radius: 5px;
+    flex: 1 1 auto;
+
+    .fb-spinner {
+    }
+
+    .fb-spinner-text {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+
+
+.modal-template-container {
+    display: none;
+
+    &.has-open-modal {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+    }
+
+    > * {
+        z-index: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+    }
+}
+
+input-date-time {
+    display: inline-block;
+
+    &.date {
+        min-width: 110px;
+    }
+
+    &.time {
+        min-width: 60px;
+    }
+}
+
+.modal-content {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    overflow: visible;
+    max-height: 97vh;
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+.modal-body {
+    flex: 1 1 auto;
+}
+
+.modal-header {
+    flex: 0 0 auto;
+}
+
+.modal-footer {
+    flex: 0 0 auto;
+}
+
+feline-photo-gallery {
+    .gallery-background {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        background-color: rgba(0,0,0,.9);
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .gallery-container {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+    }
+
+    .image-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-nav {
+        min-width: 50px;
+        padding: 15px;
+        color: #FFF;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-header-actions {
+        padding: 15px;
+        color: #FFF;
+    }
+}
+
+feline-month-kalender {
+    .year-text {
+        padding: 0px 5px 0px 5px;
+    }
+
+    .month-text {
+        padding: 0px 5px 0px 5px;
+    }
+
+    .kalender-month-container {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .kalender-year {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .kalender-year-months {
+        display: flex;
+        flex-flow: row;
+
+        .kalender-month {
+            margin: 0px 15px 0px 15px;
+            display: flex;
+            flex-flow: column nowrap;
+
+            .kalender-month-name {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+
+                > * {
+                    margin: 0px 15px 0px 15px;
+                }
+            }
+        }
+    }
+
+    .kalender-week {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        .kalender-week-days {
+            display: flex;
+            flex-flow: row nowrap;
+            border-bottom: 1px solid #DDD;
+            border-top: 1px solid rgba(0,0,0,0);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kalender-day {
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+
+    .week-of-year {
+        color: #5b6069;
+        padding-right: 5px;
+        font-size: 0.9em;
+        width: 25px;
+    }
+
+    .week-day-header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        .week-days-labels {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            border-bottom: 1px solid #DDD;
+        }
+
+        .week-day {
+            font-weight: bold;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.feline-kalender-day {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    cursor: pointer;
+    &.highLight{
+         background-color: #fffac8;
+    }
+}
+
+feline-tiled-check-box {
+    .check-boxes {
+        display: flex;
+        flex-flow: row wrap;
+
+        > .check-box {
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            justify-content: center;
+            width: 100px;
+            cursor: pointer;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #DDD;
+
+            &.active {
+                background-color: #CCC;
+            }
+
+            &:hover {
+                background-color: #EEE;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+//
+// Pager pagination
+// --------------------------------------------------
+
+.pager-container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 15px;
+  border-top: 2px solid #ddd;
+
+  .pagination {
+    margin: 0 !important;
+
+    li {
+      cursor: pointer;
+
+      &.disabled {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.6;
+      }
+    }
+  }
+}

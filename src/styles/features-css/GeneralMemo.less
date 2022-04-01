@@ -1,0 +1,108 @@
+@import "../oz-css/shared-variabelen.less";
+@import "../css/cevi-variables.less";
+
+.customMemoModal {
+    .p-dialog-content { 
+        overflow-y:unset !important; 
+        background: unset !important;
+        color: unset !important;
+        padding:unset !important;
+    }
+}
+
+.customMemoModal.p-dialog{ box-shadow:unset !important; }
+
+/*GeneralMemo*/
+#oz-generalmemo-container {
+    background: white;
+    height: calc(~"100vh - 60px");
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 15px;
+
+    padding: 0 !important;
+
+    .memotitel {
+        font-size: 20px;
+        padding-left: 10px;
+        color: rgb(0, 124, 180);
+        border: 5px solid rgb(0, 124, 180);
+    }
+
+    .memosubtitel {
+        font-size: 17px;
+        margin-right: 15px;
+        padding-left: 10px;
+        color: rgb(0, 124, 180);
+        font-style: italic;
+    }
+
+
+    .niet-actieve-melding {
+        width: 40px;
+    }
+
+    .actieve-melding {
+        border-color: @color-active-button;
+        box-shadow: 0 0 10px @color-active-button;
+        background: @color-font-header;
+        color: lighten(@color-font-header,30%);
+        width: 40px;
+    }
+
+
+    .oz-generalmemo-descr {
+        min-height: 30px;
+        border: 3px solid white;
+        //   margin-top: 5px; // omdat align-items: center niet werkt
+        padding-top: 2px; // omdat align-items: center niet werkt
+        //  padding-bottom: 7px; // omdat align-items: center niet werkt
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        background: @color-box-background;
+    }
+
+    .oz-generalmemo-rubriek {
+        overflow: visible;
+        border: 5px solid lighten(@color-font-header,30%);
+        margin-left: 10px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        background: white;
+    }
+
+    .oz-generalmemo-no-elements {
+        min-height: 30px;
+        border: 3px solid white;
+        //   margin-top: 5px; // omdat align-items: center niet werkt
+        padding-top: 2px; // omdat align-items: center niet werkt
+        //  padding-bottom: 7px; // omdat align-items: center niet werkt
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        font-size: 10px;
+        background: white;
+    }
+}
+    .oz-memo-selectie-row {
+        padding: 3px;
+    }
+.oz-memo-selectie-period {
+    padding: 3px;
+    margin-left:10px;
+}
+
+    .oz-memo-selectie-button-row {
+        .oz-memo-selectie-row;
+        min-height: 25px;
+    }
+
+
+@media only screen and (max-width: 800px) {
+    #oz-generalmemo-container {
+        margin-bottom: 0;
+    }
+}

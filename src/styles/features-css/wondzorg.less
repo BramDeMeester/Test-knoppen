@@ -1,0 +1,492 @@
+.container-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.treament-name {
+    font-weight: bold;
+}
+
+.treament-frequency {
+    margin: 0px 5px 0px 5px;
+}
+
+.wondzorg-detail {
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3,
+    .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5,
+    .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+    .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10,
+    .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12,
+    .col-sm-12, .col-md-12, .col-lg-12 {
+        position: unset;
+    }
+
+    .treatment-container {
+        padding: 5px 15px 5px 15px;
+        background-color: #DDD;
+        border-radius: 5px;
+    }
+
+    .injury-degree {
+        font-weight: bold;
+    }
+
+    .wondzorg-treament-detail {
+        position: relative;
+    }
+}
+
+.treatment-selection-list {
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    max-height: 35vh;
+}
+
+feline-dostype {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+	width: 100%;
+
+    .dossier-rubriek {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        padding: 0px 15px 0px 15px;
+
+        .dossier-rubriek-naam {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .dossier-rubriek-vragen {
+        }
+
+        .dossier-vraag-omschrijving {
+            font-weight: bold;
+        }
+
+        .dossier-vraag-antwoord {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1 1 auto;
+            .answer{
+                position:relative;
+                margin: 5px 0px 5px 0px;
+            }
+            .answer-bedrag {
+            }
+
+            .answer-tekst {
+                > textarea {
+                    min-height: 30px;
+                }
+            }
+
+            .answer-datum {
+            }
+
+            .answer-dropdown {
+            }
+
+            .answer-edit {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+
+        .deel-dossier {
+        }
+    }
+}
+
+feline-treatment-detail {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  overflow: hidden;
+
+  .treatment-degree {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    overflow: hidden;
+    padding: 0px 15px;
+	margin-top: 10px;
+
+    .treatment-degree-label {
+      width: 100%;
+      padding: 5px 0px;
+    }
+
+    .treatment-degree-field {
+      width: 100%;
+	  
+    }
+  }
+
+  .treatment-generic-file {
+    padding: 15px 0px 15px 0px;
+  }
+
+  .treatment-observation {
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+
+feline-wondzorg-observatie {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    overflow: hidden;
+
+    .treatment-observation-container {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        overflow: hidden;
+
+        .treatment-observation-header {
+            font-weight: bold;
+            padding: 5px 15px 5px 15px;
+            background-color: #EEE;
+            border-radius: 5px;
+            display: flex;
+            flex-flow: row wrap;
+            flex: 1 1 auto;
+            overflow: hidden;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .observation-text {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1 1 auto;
+            overflow: hidden;
+
+            .observation-description {
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #DDD;
+                flex: 1 1 auto;
+                min-height: 60px;
+                cursor: pointer;
+            }
+
+            .observation-description-edit {
+                display: flex;
+                flex-flow: row nowrap;
+                flex: 1 1 auto;
+                overflow: hidden;
+                align-items: center;
+
+                textarea {
+                    min-height: 60px;
+                }
+            }
+        }
+    }
+
+    .observation-followup-actions {
+        > * {
+            margin: 0px 5px 0px 5px;
+        }
+    }
+
+    .treatment-followups-container {
+
+        .treatment-followup {
+            padding: 15px 15px 15px 35px;
+        }
+
+        .treatment-followup.even:nth-child(2n+1) {
+            // border-left: 15px solid rgb(187, 230, 255);
+            background-color: rgb(236, 247, 254);
+        }
+
+        .treatment-followup.odd:nth-child(2n+2) {
+            // border-left: 15px solid rgb(187, 230, 255);
+            background-color: rgb(236, 247, 254);
+        }
+    }
+}
+
+feline-wondzorg-observatie-followup {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    overflow: hidden;
+
+    .followup-container {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+        overflow: hidden;
+        padding: 15px 0px 0px 0px;
+        align-items: center;
+    }
+
+    .followup-description {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        overflow: hidden;
+        padding: 0px 15px 0px 15px;
+        cursor: pointer;
+    }
+
+    .followup-description-text {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #DDD;
+        background-color: #EEE;
+
+        .follow-up-text {
+            flex: 1 1 auto;
+        }
+
+        .follow-up-info {
+            flex: 0 0 auto;
+            padding: 0px 0px 0px 15px;
+        }
+    }
+
+    .followup-description-edit {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+        overflow: hidden;
+        align-items: center;
+
+        textarea {
+            min-height: 30px;
+        }
+    }
+}
+
+feline-wondzorg-locatie-image-editor, feline-wondzorg-locatie-image {
+
+    .regio-detail-container {
+        min-width: 30%;
+    }
+
+    .image-metadata-container {
+        min-width: 300px;
+    }
+
+    .current-point {
+        border-radius: 5px;
+        background-color: #EEE;
+    }
+
+    .canvas-container {
+        position: relative;
+
+        > canvas {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+}
+
+feline-wondzorg-locatie-image-editor{
+    .modal-dialog{
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+.injurydocument-header {
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+feline-frequency-schema {
+    .frequency-schema-container {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .frequency-data-container {
+        min-width: 390px;
+        max-width: 530px;
+    }
+
+    .frequency-scheduling-time-container {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .frequency-scheduling-time {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        > * {
+            padding: 5px 15px 5px 15px;
+            border-bottom: 1px solid #DDD;
+
+            &:hover {
+                background-color: #EEE;
+            }
+        }
+    }
+}
+
+feline-frequency-schema-kalender {
+    .feline-kalender-day {
+        &.highLight{
+            background-color: #def6ff;
+        }
+    }
+}
+
+feline-frequency-weekdays, feline-frequency-monthdays {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 660px;
+
+    .weekday-tile, .frequency-month-day {
+        border-radius: 50%;
+        border: 1px solid #CCC;
+        padding: 5px 15px 5px 15px;
+        background-color: #FFF;
+        margin: 5px;
+        width: 2em;
+        height: 2em;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #def6ff;
+        }
+
+        &.active {
+            background-color: #def6ff;
+        }
+    }
+}
+.observatie-header-wondzorg {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    padding-right: 15px;
+
+    .wondtype-label {
+        min-width: 100px;
+        flex: 0 1;
+        text-align: left;
+    }
+
+    .wondtype-waarde {
+        font-weight: bold;
+        flex: 1 1;
+    }
+
+    .wondlocatie-label {
+        min-width: 100px;
+        flex: 0 1;
+        text-align: left;
+    }
+
+    .wondlocatie-waarde {
+        font-weight: bold;
+        flex: 1 1;
+    }
+}
+
+feline-wondzorg-task-modal, feline-observatie-followup {
+  feline-dostype {
+    .dossier-rubriek {
+
+      .dossier-rubriek-naam {
+      }
+
+      .dossier-rubriek-vragen {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+      }
+
+      .dossier-vraag-omschrijving {
+        font-weight: bold;
+       // padding: 5px 15px;
+        //width: 150px;
+        //text-align: right;
+      }
+
+      &:not(.editable) .dossier-vraag-antwoord {
+        .answer {
+          margin: 0px;
+
+          .form-control {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            height: inherit;
+            padding: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            color: inherit;
+            background-color: inherit;
+            background-image: none;
+            border: inherit;
+            border-radius: 0px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            /* -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+            -o-transition: none;
+            transition: none;
+          }
+        }
+      }
+
+      .deel-dossier {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  feline-wondzorg-task-modal, feline-observatie-followup {
+    feline-dostype {
+      .dossier-rubriek {
+
+        .dossier-rubriek-naam {
+        }
+
+        .dossier-rubriek-vragen {
+          flex-flow: column nowrap;
+        }
+
+        .dossier-vraag-omschrijving {
+          text-align: left;
+          padding: 5px 0px;
+        }
+
+        &:not(.editable) .dossier-vraag-antwoord {
+           padding: 0px 15px;
+        }
+
+        .deel-dossier {
+        }
+      }
+    }
+  }
+}

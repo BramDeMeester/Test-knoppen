@@ -1,0 +1,378 @@
+@import "../oz-css/shared-variabelen.less";
+@import "../css/cevi-variables.less";
+
+feline-medication-new {
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+feline-zorgen-new {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.new-tasks {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    //height: 100%;
+    flex: 1 1 auto;
+
+    .new-task-filters-container {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        justify-content: space-between;
+    }
+
+    .new-task-header-container {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 0 0 auto;
+        justify-content: space-between;
+    }
+
+    .new-task-day-navigation {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+
+        > * {
+            margin: 0px 5px 0px 5px;
+        }
+    }
+
+    .new-task-tasks-container {
+        display: block;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+
+        > * {
+            margin: 5px 0px 5px 0px;
+        }
+    }
+
+    .new-task-occasional-tasks {
+        flex: 0 0 40px;
+    }
+
+    .task-setup-manner {
+        font-weight: bold;
+        border-radius: 50%;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        &.manner-A {
+            background-color: rgb(187, 230, 255);
+        }
+
+        &.manner-K {
+            background-color: #d6ffd3;
+        }
+
+        &.manner-N {
+            background-color: #ffdede;
+        }
+    }
+
+    .new-task-task-group-container {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .new-task-group-header {
+            min-width: 20px;
+            max-width: 20px;
+            border-radius: 5px;
+            flex: 0 0 auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+
+            .new-task-timeblock {
+                display: flex;
+                flex-flow: column nowrap;
+                padding: 5px;
+                font-size: 12px;
+
+                .timeblock-time {
+                    font-weight: bold;
+                    text-align: right;
+                }
+
+                .timeblock-date {
+                    font-weight: bold;
+                    writing-mode: vertical-lr;
+                }
+
+                > * {
+                    margin: 5px 0px 5px 0px;
+                }
+            }
+
+
+
+            &.past-12 {
+                background: #ffeda9;
+            }
+
+            &.past-4 {
+                background: #e2ffcd;
+            }
+
+            &.now-0 {
+                background: #98ff51;
+            }
+
+            &.future-4 {
+                background: #e2ffcd;
+            }
+
+            &.future-12 {
+                background: #bbe6ff;
+            }
+        }
+    }
+
+    .new-task-group-tasks-container {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        font-size: 14px;
+
+        > * {
+            margin: 5px 0px 5px 0px;
+        }
+
+        .new-task-group-sign-all {
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 5px;
+
+            .new-task-group-sign-all-actions {
+                color: #3496ce;
+
+                > * {
+                    margin: 0px 5px 0px 5px;
+                }
+            }
+        }
+    }
+
+    .new-task-task-action-container {
+        .cannot-modify {
+            color: #AAA;
+        }
+
+        > * {
+            margin: 0px 5px 0px 5px;
+            cursor: pointer;
+        }
+    }
+
+    .new-task-task {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 0 0 auto;
+        font-size: 14px;
+
+        > .new-task-task-title {
+            padding: 5px 5px 5px 5px;
+            background-color: #EEE;
+            font-size: 1em;
+            min-height: 40px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            .new-task-task-caret {
+                min-width: 15px;
+                max-height: 15px;
+            }
+
+            .task-hour-postponed {
+                flex: 0 0 auto;
+                color: #D33;
+                border: 2px solid #D33;
+                border-radius: 5px;
+                padding: 5px;
+                margin: 0px 5px 0px 5px;
+            }
+
+
+            .signing-off-left {
+                background-color: #FFF;
+                padding: 5px;
+                border: 1px solid #333;
+                border-radius: 5px;
+                flex: 0 0 auto;
+            }
+
+            > .new-task-task-title {
+                display: flex;
+                flex-flow: row nowrap;
+                flex: 1 1 auto;
+                align-items: center;
+
+                > * {
+                    margin: 0px 5px 0px 5px;
+                }
+
+                .task-hour {
+                    font-weight: bold;
+                }
+
+                .task-dosis {
+                    font-weight: bold;
+                }
+
+                .task-name {
+                }
+            }
+        }
+
+        .new-task-task-detail {
+            border: 1px solid #000;
+            border-radius: 5px;
+            display: flex;
+            flex-flow: column nowrap;
+            font-size: 1em;
+
+            > * {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .new-task-task-description {
+                border-bottom: 1px solid #333;
+                padding: 5px 15px 5px 15px;
+                display: flex;
+                flex-flow: column nowrap;
+            }
+
+            .new-task-task-week-overview {
+                display: flex;
+                flex-flow: column nowrap;
+                padding: 5px 15px 5px 15px;
+
+                > * {
+                    margin: 5px 0px 5px 0px;
+                }
+
+                .week-day-row {
+                    display: flex;
+                    flex-flow: row nowrap;
+
+
+                    .week-day {
+                        text-transform: capitalize;
+                        padding: 5px 5px 5px 0px;
+                        border: 1px solid #FFF;
+                    }
+
+                    .week-signingoffs {
+                        padding: 5px 15px 5px 5px;
+                        border: 1px solid #333;
+                        border-radius: 5px;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        margin: 0px 0px 0px 5px;
+                        cursor: pointer;
+
+                        > i {
+                            margin: 0px 5px 0px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .fb-load-spinner > .fb-spinner > i {
+        font-size: 20px;
+    }
+
+    .new-task-occasional-tasks {
+        .new-task-occasional-header {
+            background-color: #e7faff;
+            border-radius: 5px 5px 5px 0px;
+        }
+
+        .occasional-header {
+            background-color: #e7faff;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        .ocassional-title {
+            font-weight: bold;
+        }
+    }
+
+    .new-task-attention-points {
+        .new-task-attention-points-header {
+            background-color: #e7faff;
+            border-radius: 5px 5px 5px 0px;
+        }
+
+        .attention-points-header {
+            background-color: #e7faff;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        .attention-title {
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: @smallwindow-grens) {
+    .new-tasks {
+        .new-task-task {
+            padding: 5px 5px 5px 5px;
+
+            .new-task-task-caret {
+                display: none;
+            }
+
+            .new-task-task-title {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+
+            .new-task-task-action-container {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+    }
+}
+
+feline-zorgen-new, feline-medication-new {
+    .oz-knop {
+        color: #007cb4;
+        background: #f6f6f6;
+        width: 100%;
+        padding: 7.5px;
+        height: 40px;
+        opacity: 1 !important;
+
+        > * {
+            margin: 0px 5px 0px 5px;
+        }
+    }
+}

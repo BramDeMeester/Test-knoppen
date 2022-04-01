@@ -1,0 +1,140 @@
+
+@media screen and (max-width: @smallwindow-grens) {
+    .wozapp-modal-breed .modal-dialog {
+        width: 95%;
+    }
+    .modal-content {
+    margin: 0 !important;
+}
+}
+
+@media screen and (min-width: @smallwindow-grens) {
+    .wozapp-modal-breed .modal-dialog {
+        width: 40%;
+    }
+}
+
+feline-new-observation-modal {
+    .border-valincident {
+        width: 98%;
+        margin: 0 auto;
+        border: 2px solid @color-grey;
+    }
+
+    .border-valincident-display {
+        display: inherit;
+        width: 200px !important;
+        margin: 0 auto;
+    }
+
+    .border-valincident-text {
+        width: 100px; 
+        background-color: @color-pastel-grey;
+        padding-left: 5px;
+    }
+
+    hr {
+        margin: 0 !important;
+    }
+
+    .modal-body {
+        overflow: visible;
+        padding: 0 !important;
+        padding-top: 5px !important;
+    }
+
+    .oz-knop {
+        height: 40px;
+        font-size: 16px;
+        margin: 5px !important;
+        color: #666;
+    }
+
+    .oz-knop.halve-breedte {
+        float: left;
+        width: calc(~"50% - 10px");
+    }
+
+    .datum-up-down-container {
+        display: flex;
+        // justify-content:center;
+        .datum-up-down {
+           // flex: 1;
+        }
+
+        .datum {
+            flex: 3;
+            text-align: center;
+            vertical-align: middle;
+            font-size: large;
+            padding-top: 10px;
+        }
+
+        .datum-onderlijn {
+            border-bottom: 1px solid #999;
+        }
+    }
+
+    .btn-group {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .btn.btn-primary.select-filter {
+        width: 100%;
+    }
+
+    .btn.btn-primary.select-filter.not-template {
+        background: #f6f6f6;
+        border-color: #AAAAAA;
+        color: #666;
+    }
+
+
+    ul.dropdown-menu {
+        width: 100%;
+        z-index: 9999;
+        overflow: auto;
+    }
+
+    li.selected-destination-group a {
+        background: @color-mid-blue;
+        color: white;
+    }
+
+    .dropdown-menu li.selected-destination-group a:hover,
+    .dropdown-menu li.selected-destination-group a:focus {
+        background: @color-mid-blue;
+        color: white;
+    }
+
+    li.selected-group a {
+        background: @color-mid-blue;
+        color: white
+    }
+
+    .dropdown-menu li.selected-group a:hover,
+    .dropdown-menu li.selected-group a:focus {
+        background: @color-mid-blue;
+        color: white;
+    }
+
+
+    .dropdown-menu li a:hover,
+    .dropdown-menu li a:focus {
+        background: white;
+    }
+
+    textarea {
+        width: calc(~"100% - 10px");
+        margin: 5px;
+        height: 80px;
+        font-size: 16px;
+        padding: 5px;
+        resize: none;
+    }
+
+    .modal-footer {
+        padding: 0 !important;
+    }
+}

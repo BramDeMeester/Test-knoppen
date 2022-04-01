@@ -1,0 +1,381 @@
+@import "../css/cevi-variables.less";
+@import "../oz-css/shared-variabelen.less";
+
+feline-bewoner-detail-filter {
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    .resident-detail-filter {
+        color: @color-font-header;
+        background: @color-background-header;
+        font-size: 20px;
+
+
+        .disable-knop {
+            color: lighten(@color-font-header, 30%);
+        }
+
+        .disable-knop:active {
+            border-color: @color-font-header;
+            box-shadow: none;
+        }
+
+        .is-disabled {
+            cursor: no-drop;
+        }
+    }
+}
+
+/*
+.resident-detail-container {
+    display: flex;
+    background: @color-container-popup;
+    overflow: hidden;
+    position: relative;
+    color: @color-font-container;
+    border-radius: 5px;
+    border: 2px solid @color-grey;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+
+    .resident-info-container {
+        font-size: 20px;
+        padding: 16px;
+        max-width: 400px;
+        overflow-y: auto;
+        width: 30%;
+
+        .location {
+            margin-bottom: 12px;
+
+            & > span {
+                color: @color-white;
+                background-color: @color-grey;
+                border-radius: 4px;
+                margin-right: @small-distance;
+                margin-bottom: @medium-distance;
+                font-size: 14px;
+                padding: 6px;
+                vertical-align: middle;
+            }
+        }
+
+        .name {
+            text-align: center;
+        }
+
+        .resident-image {
+            text-align: center;
+            margin-top: 8px;
+
+            .img-thumb a {
+                position: relative;
+            }
+
+            .centered-bewoner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -300%);
+                z-index: 1;
+                color: @color-dark-grey;
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            .DNR-bol {
+                top: -90px;
+                left: 4px;
+            }
+
+            .kind-of-stay {
+                font-size: 14px;
+            }
+        }
+
+        .age {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        .bewoner-detail-doctor {
+            font-size: 20px;
+            color: lighten(@color-font-container, 20%);
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .resident-info-container-mobile,
+    .navigation {
+        display: none;
+    }
+
+    .resident-detail-content-container {
+        width: 70%;
+        padding: 16px;
+        overflow: hidden;
+        border-left: 1px solid @color-light-grey;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+    }
+
+    .resident-detail-nav {
+        .nav-button {
+            display: inline;
+            margin: 0 10px;
+            text-align: center;
+
+            .actie-knop {
+                color: lighten(@color-font-container, 30%);
+                padding-top: 9px;
+                .border;
+                overflow: hidden;
+                border-radius: 50%;
+                height: @large-distance;
+                width: @large-distance;
+                text-align: center;
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            .actie-knop:active {
+                border-color: @color-active-button;
+                box-shadow: 0 0 10px @color-active-button;
+            }
+
+            .actie-knop.actieve-actie-knop {
+                background: @color-mid-blue;
+                color: lighten(@color-font-header, 30%);
+                border: none;
+            }
+
+            .is-disabled {
+                cursor: no-drop;
+            }
+        }
+    }
+}
+*/
+/* Mobile styles */
+
+@media screen and (max-width: @smallwindow-grens) {
+    .resident-detail-filter {
+        font-size: 14px;
+        padding: 0;
+        height: auto;
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: #ddd;
+
+        .nav-buttons {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            .nav-header-button {
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                text-align: center;
+
+                .oz-knop {
+                    border: none;
+                    background: none;
+                    width: auto;
+                    color: #000000;
+                }
+            }
+        }
+
+        .time-filter,
+        .logout {
+            display: none;
+        }
+    }
+
+   /* .resident-detail-container {
+        flex-flow: column nowrap;
+
+        .navigation {
+            display: block;
+            flex: 0 0 auto;
+        }
+
+        .resident-detail-content-container {
+            padding: 5px;
+            border: none;
+            // overflow: auto;
+            flex: 1 1 auto;
+            width: 100%;
+        }
+
+        .resident-info-container {
+            display: none;
+        }
+
+        .resident-info-container-mobile {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 0 0 auto;
+
+            .resident-header {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: white;
+                padding: 0 10px;
+                border-bottom: 2px solid #2e6da4;
+
+                .resident-header-item {
+                    .resident-info-content {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+
+                        .resident-image {
+                            .bewoner-thumb .img-thumb .img-div {
+                                margin: 10px;
+                                border-radius: 50%;
+                                height: 65px;
+                                min-width: 65px;
+                                max-width: 100px;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                display: inline-block;
+                                background-color: white;
+                                position: relative;
+                            }
+
+                            .katz-bol {
+                                top: 60px;
+                                left: 60px;
+                            }
+
+                            .VZP-bol {
+                                top: 0px;
+                                left: 0px;
+                            }
+
+                            .DNR-bol {
+                                top: 0px;
+                                left: 60px;
+                            }
+
+                            .birthday {
+                                top: -5px;
+                                left: 25px;
+                            }
+                        }
+
+                        .resident-info {
+                            margin: 0 5px;
+
+                            .location-info {
+                                display: flex;
+                                flex-flow: row wrap;
+
+                                span {
+                                    margin: 2px 4px 2px 0px;
+                                    color: @color-white;
+                                    background-color: @color-grey;
+                                    padding: 4px;
+                                    border-radius: 4px;
+                                    vertical-align: middle;
+                                    font-size: 12px;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            .bewoner-detail-naam {
+                                font-size: 14px;
+                                overflow: visible;
+                            }
+
+                            .bewoner-detail-doctor {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .resident-nav-arrow {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .resident-detail-nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            //position: fixed;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            height: 2 * @height-footer;
+            background: lighten(@color-container, 10%);
+            overflow: hidden;
+            margin-bottom: -@height-footer;
+            border-top: 1px solid @color-light-grey;
+            padding: 0;
+
+            .nav-button {
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                margin: 0;
+
+                .actie-knop {
+                    padding: 8px;
+                    margin: 5px;
+                    margin-bottom: 0px;
+                    height: 50px;
+                    width: 50px;
+                    text-align: center;
+                    font-size: 26px;
+                    line-height: 32px;
+
+                    &:active {
+                        border-color: @color-active-button;
+                        box-shadow: 0 0 10px @color-active-button;
+                    }
+                }
+            }
+        }
+    }*/
+}
+
+@media screen and (min-width: 1200px) {
+ /*   .resident-detail-container {
+        .resident-detail-content-container {
+            width: 100%;
+         //   overflow: auto;
+            flex: 1 1 auto;
+        }
+    }*/
+}

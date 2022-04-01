@@ -1,0 +1,72 @@
+select{
+    border-radius:@input-border-radius;
+    font-family:@input-font-family !important;
+    font-size:@input-font-size !important;
+    border: 1px solid @color-grey;
+    height: 30px;
+}
+input{
+    border-radius:@input-border-radius;
+    font-family:@input-font-family;
+    font-size: @input-font-size !important;
+    height:30px;
+    margin-top:0px !important;
+}
+.inputLabel{
+    font-family:@input-font-family;
+    font-size:@input-font-size !important;
+    font-weight:bold;
+    margin-top:5px;
+    margin-left:12px;
+    margin-bottom:5px;
+}
+.dashboard-input{
+    margin-top:@dashboard-input-margin-top !important;
+    height:28px;
+    font-size:11px;
+
+}
+// input[type="checkbox"] {
+//     display:none;
+//     height:16px !important;
+// }
+.checkbox label:before {
+    border-radius: 5px;
+    border-color:@color-grey;
+}
+input[type=checkbox]:checked + label:before {
+    font-family:'cevi-icon-font';
+    content: "\e907";
+    //text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 9px;
+    color: @color-dark-grey;
+    //font-weight:bold;
+    border-color:@color-dark-grey;
+    text-align:center;
+    line-height: 15px;
+    background:transparent;
+    border-radius: 3px;
+}
+.checkbox label{
+    width:10px!important;
+    min-height:0px!important
+
+}
+// .checkbox>label:before {
+//     content: "";
+//     display: inline-block;
+//     width: 15px;
+//     height: 15px;
+//     margin-right: 10px;
+//     position: absolute;
+//     left: 0;
+//     bottom: 1px;
+//     background-color: transparent;
+//     border:1px solid @color-light-grey;
+//     //box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+// }
+.input-control-cevi{
+    color:@color-dark-grey !important;
+    height:30px;
+    font-size:12px !important;
+}

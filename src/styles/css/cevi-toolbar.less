@@ -1,0 +1,174 @@
+.navbuttons{
+    position:fixed
+
+}
+//TOOLBAR
+.icon-toolbar{
+    border:1px solid @color-dark-grey;
+    color:@color-dark-grey;
+    border-radius:50%;
+    height:@icon-circle-radius-toolbar;
+    width:@icon-circle-radius-toolbar;
+    background:transparent;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+        @media screen and (max-height:800px){
+         height:35px;
+         width:35px;
+    }
+}
+.icon-toolbar-image{
+    font-size:@icon-height-toolbar;
+    position:relative;
+    height:@icon-circle-radius-toolbar;
+    text-align:center;
+    text-decoration:none;
+    line-height:@icon-circle-radius-toolbar;
+    @media screen and (max-height:800px){
+        font-size:16px;
+        position:relative;
+        height:35px;
+        line-height:35px;
+    }
+    
+}
+.icon-toolbar-image>i{
+    cursor:pointer;
+
+}
+.icon-toolbar:hover{
+    background:@color-light-blue;
+    color:@color-white;
+    border:1px solid @color-light-blue;
+    text-decoration:none !important;
+}
+.icon-toolbar-active{
+    background:@color-light-blue;
+    color:@color-white;
+    border:1px solid @color-light-blue;
+}
+.icon-toolbar-active~.toolbar-label{
+    color:@color-light-blue;
+}
+.icon-toolbar:hover~.toolbar-label{
+    color:@color-light-blue;
+}
+.toolbar-label{
+    font-size:@body-font-size;
+    color:@color-dark-grey;
+    width:100%;
+    margin-top:5px;
+    text-align:center;
+    margin-left:3px;
+}
+//DASHBOARD MENU
+.icon-large{
+    margin: 0 auto;
+    border:3px solid @color-white;
+    color:@color-white;
+    border-radius:50%;
+    height:@icon-circle-radius;
+    width:@icon-circle-radius;
+    background:transparent;
+    margin-top:30px;
+    @media screen and (max-width:@screen-md-size){
+        height:35px;
+        width:35px;
+        border:3px solid @color-white;
+        margin-top:0px;
+        float:left;
+    }
+     @media screen and (min-width:968px) and (max-width:1512px){
+        height:60px;
+        width:60px;
+        border:3px solid @color-white;
+        margin-top:30px;
+    }
+}
+.col-icon-image{
+     @media screen and (max-width:990px){
+        height:50px;
+
+    }
+}
+.large-label{
+    font-size:14px;
+    color:@color-white;
+    width:82px;
+    text-align:center;
+    font-weight:bold;
+    margin:0 auto;
+    margin-top:5px;
+    word-break:normal;
+
+     @media screen and (max-width:968px){
+          width:60px;
+         font-size:12px;
+         float:right;
+         padding-top:5px;
+         text-align:center;
+
+    }
+       @media screen and (min-width:968px) and (max-width:1512px){
+         width:60px;
+         font-size:12px;
+         padding-top:5px;
+         text-align:center;
+
+    }
+}
+.icon-large:hover{
+    background:@color-white;
+    color:@color-light-blue;
+
+}
+.icon-large-image{
+    font-size:@icon-height;
+    position:relative;
+    height:@icon-circle-radius;
+     @media screen and (max-width:968px){
+       font-size:14px;
+
+    }
+      @media screen and (min-width:968px) and (max-width:1512px){
+         font-size:24px;
+
+    }
+}
+.icon-large-image>i{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%,-50%);
+     @media screen and (max-width:968px){
+     top:15%;
+    }
+    @media screen and (min-width:968px) and (max-width:1512px){
+        top:26%;
+
+    }
+
+
+   
+}
+.logo-dashboard{
+    font-size:@logo-font-size-dashboard;
+    color:@color-red;
+     @media screen and (max-width:@screen-md-size){
+        font-size:32px;
+    }
+}
+.logo{
+color: @color-red;
+margin-left:10px;
+font-size:@font-size-logo;
+}
+.menu-active{
+    background:@color-light-blue;
+    color:@color-white;
+    border:1px solid @color-light-blue;
+}

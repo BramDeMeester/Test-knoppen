@@ -1,0 +1,90 @@
+.modal-template-container {
+    display: none;
+
+      
+.modal-content {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    overflow: visible;
+    max-height: 97vh;
+    position: relative;
+    border: none !important;
+    margin:0 !important;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.50) !important;
+}
+    
+.modal-backdrop {
+    display: none !important;
+}
+    
+.modal-body {
+    flex: 1 1 auto;
+}
+    
+.modal-header {
+    flex: 0 0 auto;
+    justify-content: space-around !important;
+}
+
+.modal-footer {
+    flex: 0 0 auto;
+    padding: 15px !important;
+    text-align: right !important;
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+.fb-modal {
+    display: block !important;
+    max-width: inherit;
+}
+
+.modal
+{
+    position: fixed !important;
+    top:0 !important;
+    right:0 !important;
+    bottom:0 !important;
+    left: 0 !important;
+    outline:0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (min-width: 992px){
+    .modal-lg, .modal-xl {
+        max-width: 900px !important;
+    }  
+}
+
+.fb-modal .modal-dialog {
+    max-width: inherit;
+}
+
+}
+
+.modal-template-container.has-open-modal {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+}
+
+.modal-template-container > * {
+    z-index: 900;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+}
+
+input-date-time {
+    display: inline-block;
+}
+    
+input-date-time.date {
+    min-width: 110px;
+}
+    
+input-date-time.time {
+    min-width: 60px;
+}

@@ -1,0 +1,79 @@
+@import "../oz-css/shared-variabelen.less";
+@import "../css/cevi-variables.less";
+
+.fade-in.ng-enter,
+.fade-in[ng-view].ng-enter {
+	opacity: 0;
+	-webkit-transition: opacity  500ms;
+	transition: opacity  500ms;
+}
+.fade-in.ng-enter-active,
+.fade-in[ng-view].ng-enter-active {
+	opacity: 1;
+}
+
+
+#detail-bewoner-container.ng-hide-add,
+#detail-bewoner-container.ng-hide-remove{
+	transition: opacity 350ms;
+}
+#detail-bewoner-container.ng-hide-add-active,
+#detail-bewoner-container.ng-hide-remove{
+	opacity: 0;
+}
+#detail-bewoner-container.ng-hide-remove-active{
+	opacity:1;
+}
+
+
+#fade-in-smartphone.ng-hide-add,
+#fade-in-smartphone.ng-hide-remove{
+	transition: opacity 350ms;
+}
+#fade-in-smartphone.ng-hide-add-active,
+#fade-in-smartphone.ng-hide-remove{
+	opacity: 0;
+}
+#fade-in-smartphone.ng-hide-remove-active{
+	opacity:1;
+}
+
+
+
+.z.ng-enter, 
+.z.ng-leave {
+	transition: transform 250ms, margin 250ms;
+//	transition: opacity 350ms;
+}
+.z.ng-enter, 
+.z.ng-leave-active {
+	transform: translate3d(-100%,0,0);
+	margin-bottom: -35px; //hoogte zorgdivke
+//	opacity: 0.5;
+}
+.z.ng-enter-active {
+		transform: translate3d(0,0,0);
+		margin-bottom: 0px; //standaard margin-bottom zorgdivke
+//		opacity: 1;
+}
+.ng-enter-stagger,
+.ng-leave-stagger {
+	transition-delay:50ms;
+	transition-duration:0;
+}
+
+// Overrules nuget cevi loading
+.cevi-loading-line {
+    background: #fff !important;
+}
+
+.cevi-loading-subline {
+    background: #6295f5 !important;
+}
+
+.cevi-loading-dec {
+    animation: decrease 4s 0.5s infinite !important;
+}
+.cevi-loading-inc {
+    display: none;
+}
